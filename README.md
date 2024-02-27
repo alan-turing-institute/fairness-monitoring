@@ -17,7 +17,7 @@ We selected a set of evaluation and mitigation strategies that can inform the de
 
 1. **Embedding-based metrics (evaluation):** Actively monitoring word or sentence level embeddings and computing the distances between certain groups.
 2. **Probability based metrics (evaluation):** These metrics include comparing the next-token probabilities or likelihoods between sentences.
-3. **Architecture modification technique (mitigation):**Changing the architecture configuration or including new layers for de-biasing can dynamically guide models to learn fair representations.
+3. **Architecture modification technique (mitigation):** Changing the architecture configuration or including new layers for de-biasing can dynamically guide models to learn fair representations.
 4. **Analysing modular debiasing networks (mitigation):** Modular networks can work as abstract models that can work stand-alone independent of the architecture configurations.
 
 
@@ -29,7 +29,7 @@ We selected a set of evaluation and mitigation strategies that can inform the de
 
 ## Stage 2: Developing a CI/CD Tool
 
-![](./media/illustration.png)
+![](./media/illustration.jpg)
 
 Imagine a scenario, where an AI vendor specializing in insurance decision-making endeavours to develop an LLM-powered tool for anticipating future insurance cases based on historical data. Out tool in a CI/CD flow can help them in the following steps:
 
@@ -40,4 +40,12 @@ Imagine a scenario, where an AI vendor specializing in insurance decision-making
 5.	The tool automatically generates documentation detailing the fairness assessments conducted, the detected issues, and the implemented mitigations. This documentation serves as a transparent record of the fairness efforts undertaken, aiding in accountability and compliance.
 
 
-[^1] I. O. Gallegos et al., ‘Bias and Fairness in Large Language Models: A Survey’. arXiv, Sep. 01, 2023. Accessed: Oct. 17, 2023. [Online]. Available: http://arxiv.org/abs/2309.00770 
+## Tutorials and Learning Resources
+
+1. [Using LLMs on Local, HPC and Cloud](https://github.com/alan-turing-institute/llms-useful-resources): In collaboration with the [REG team](https://www.turing.ac.uk/work-turing/research/research-engineering-group), useful scripts and guidelines to set up LLMs.
+
+[^1]: I. O. Gallegos et al., ‘Bias and Fairness in Large Language Models: A Survey’. arXiv, Sep. 01, 2023. Accessed: Oct. 17, 2023. [Online]. Available: http://arxiv.org/abs/2309.00770 
+
+## Funding Information
+
+This project is one of the four projects funded in the [Fairness Innovation Challenge](https://fairnessinnovationchallenge.co.uk/#winners), delivered by the Department for Science, Innovation and Technology (DSIT), and Innovate UK, in partnership with The EHRC and The ICO. 

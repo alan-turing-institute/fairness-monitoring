@@ -42,7 +42,11 @@ Imagine a scenario, where an AI vendor specializing in insurance decision-making
 
 ## Tutorials and Learning Resources
 
-1. [Using LLMs on Local, HPC and Cloud](https://github.com/alan-turing-institute/llms-useful-resources): In collaboration with the [REG team](https://www.turing.ac.uk/work-turing/research/research-engineering-group), useful scripts and guidelines to set up LLMs.
+The following is a list of sister projects that we are working in line with this research:
+
+1. [Reading Materials](./docs/README.md): Background information, experiment results, findings and discussion. See all the information and suggested reading to improve fairness in financial LLMs.
+2. [Using LLMs on Local, HPC and Cloud](https://github.com/alan-turing-institute/llms-useful-resources): In collaboration with the [REG team](https://www.turing.ac.uk/work-turing/research/research-engineering-group), useful scripts and guidelines to set up LLMs.
+3. [Equitable AI Cookbook](https://asabuncuoglu13.github.io/equitable-ai-cookbook/): Work in progress. A series of essays and experiments to define the essentials of equitable AI and accelerate the development with tutorials.
 
 [^1]: I. O. Gallegos et al., ‘Bias and Fairness in Large Language Models: A Survey’. arXiv, Sep. 01, 2023. Accessed: Oct. 17, 2023. [Online]. Available: http://arxiv.org/abs/2309.00770 
 

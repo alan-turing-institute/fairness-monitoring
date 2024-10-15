@@ -4,9 +4,7 @@ The project aims to enable a proactive fairness review approach in the early sta
 
 ## Developing a Monitoring/Logging Tool
 
------
-|**Visit the tool dev page:** <https://github.com/asabuncuoglu13/faid> (Currently a private repo, will be released on November.)|
------
+> **Visit the tool dev page:** <https://github.com/asabuncuoglu13/faid> (Currently a private repo, will be released on November.)
 
 Incorporating interpretability and fairness into the ML development process requires the development team to manage insights from various tools and processes. Effectively utilizing information on model behavior and output disparities can enhance overall system fairness throughout the ML lifecycle by (1) providing insights into how features influence outcomes, (2) making model decisions understandable, (3) ensuring models meet fairness criteria, and (4) supporting informed decision-making. However, it's essential to recognize the limitations of current methods and to use them alongside other fairness-enhancing strategies, rather than as standalone solutions.
 
@@ -38,9 +36,7 @@ We selected a set of evaluation and mitigation strategies that can inform the de
 4. **Analysing modular debiasing networks (mitigation):** Modular networks can work as abstract models that can work stand-alone independent of the architecture configurations.
 
 
--------
-|**Visit FinBERT Sentiment Analysis Fairness Evaluation repository:** <https://github.com/asabuncuoglu13/faid-test-financial-sentiment-analysis>|
--------
+> **Visit FinBERT Sentiment Analysis Fairness Evaluation repository:** <https://github.com/asabuncuoglu13/faid-test-financial-sentiment-analysis>
 
 
 ### Interaction Method Analysis
@@ -48,9 +44,7 @@ We selected a set of evaluation and mitigation strategies that can inform the de
 1. **ISO 9241 Ergonomics of human-systems interactions to assess interfaces/interactions:** The comprehensive framework aims to assess usability and apply it to interactive system design. Providing insights related to design considerations will support our proactive fairness “by design” approach.
 2. **Microsoft Human-AI Interaction to assess interfaces/interactions:** It is a structured thinking process to design AI-powered applications.
 
--------
-|**See an example analysis here:** <https://asabuncuoglu13.github.io/equitable-ai-cookbook/usecases/finance/interaction.html>|
--------
+> **See an example analysis here:** <https://asabuncuoglu13.github.io/equitable-ai-cookbook/usecases/finance/interaction.html>
 
 ## Tutorials and Learning Resources
 

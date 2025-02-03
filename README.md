@@ -1,48 +1,38 @@
 # Proactive Monitoring of AI Fairness
 
-The project aims to enable a proactive fairness review approach in the early stages of AI development. It provides developer-oriented methods and tools to self-assess and monitor fairness. In this repository, we present a high level overview and project outputs.
+The project aims to enable a proactive fairness review approach in the early stages of AI development. It provides developer-oriented methods and tools to self-assess and monitor fairness. In this repository, we present a high level overview and list project outputs.
 
-## Developing a Monitoring/Logging Tool
+## Monitoring Fairness Metadata
 
-> **Visit the tool dev page:** <https://github.com/asabuncuoglu13/faid> (Currently a private repo, will be released on November.)
+> **Visit the tool dev page:** <https://github.com/asabuncuoglu13/faid>
 
-Incorporating interpretability and fairness into the ML development process requires the development team to manage insights from various tools and processes. Effectively utilizing information on model behavior and output disparities can enhance overall system fairness throughout the ML lifecycle by (1) providing insights into how features influence outcomes, (2) making model decisions understandable, (3) ensuring models meet fairness criteria, and (4) supporting informed decision-making. However, it's essential to recognize the limitations of current methods and to use them alongside other fairness-enhancing strategies, rather than as standalone solutions.
+Throughout the development of ML models, developers and other stakeholders use various documentation formats to enhance reproducibility and communicate the details of artefacts with both internal and external stakeholders. Organizations use metadata recording formats, such as model cards, data cards, and algorithmic transparency frameworks to improve transparency across development and deployment workflows. We refer to these documentation tools as "transparency artefacts," which are designed to enhance clarity, accountability, and trust in ML systems. We are developing a tool for effectively using these transparency artefacts as justified evidence to verify the team took the required actions and created enough evidence for the claimed fairness arguments.
 
+This "justified evidence" approach can enhance overall system fairness throughout the ML lifecycle by (1) providing insights into how features influence outcomes, (2) making model decisions understandable, (3) ensuring models meet fairness criteria, and (4) supporting informed decision-making. However, it's essential to recognise the limitations of current methods and to use them alongside other fairness-enhancing strategies, rather than as standalone solutions.
+
+**An overview of ML project lifecycle with CI/CD:**
 ![](./media/illustration.jpg)
 
-FAID (Fair AI Development) can support developers in documenting fairness-related information, which is crucial to ensure transparency and accountability in the development process. FAID’s logging framework supports comprehensive documentation by categorizing information into four key entities:
+**An overview of metadata flow throughout this lifecycle:**
+![](./media/metadataflow.png)
+
+The tool, FAID (Fair AI Development), can support developers in documenting fairness-related information, which is crucial to ensure transparency and accountability in the development process. FAID’s logging framework supports comprehensive documentation by categorizing information into four key entities:
 
 1. **Experiment-Level Fairness Log**: Tracks high-level fairness considerations across the entire system, ensuring that all components align with the overarching fairness objectives.
-2. **Model Log**: Captures detailed information about model performance, including fairness metrics, bias assessments, and adjustments made during the development process. FAID's model metadata logging capability follows Google's model metadata format. For instance, their open-source LLM model, Gemma 2, is documented here: <https://ai.google.dev/gemma/docs/model_card_2>. The model card includes an "Ethics and Safety" section with benchmark scores from nine dataset evaluations.
-3. **Data Log**: Documents the data sources, preprocessing steps, and any biases identified in the data, ensuring that data integrity is maintained throughout the lifecycle.
+2. **Model Log**: Captures detailed information about model performance, including fairness metrics, bias assessments, and adjustments made during the development process. FAID's model metadata logging capability follows Google's model metadata format (See an [example model card](https://ai.google.dev/gemma/docs/model_card_2)).
+3. **Data Log**: Documents the data sources, preprocessing steps, and any biases identified in the data, ensuring that data integrity is maintained throughout the lifecycle. (See an [example datasheet]()).
 4. **Risk Log**: Records potential risks related to fairness and how they are mitigated, including any ethical concerns, compliance issues, and the steps taken to address them.
 
-## Testing Fairness Evaluation and Mitigation Techniques
+## Fairness Evaluation of a Finance Use CAse
 
-We selected a set of evaluation and mitigation strategies that can inform the design of the “fairness rules”. Data and algorithm related techniques are selected from Gallegos et al.’s [^1] comprehensive survey. The selected techniques for data, algorithm and interaction components are following:
-
-### Data Experiments
-
-1.  **Counterfactual input techniques (evaluation):** By modifying the features of existing instances generate counterfactual instances. Use new instances to enhance the generalization of the model.
-2.  **Prompt-based strategies (evaluation):** It includes sentence completions and question-answering tasks. We can measure co-occurrence patterns for generated output.
-3.  **Data balancing/augmentation techniques (mitigation):** Increase the diversity of the training dataset by introducing synthetic samples or applying transformation techniques.
-4.  **Projection-based techniques (mitigation):** As part of the pre-processing, transforming learned representations in the embedding space can augment balancing before the learning process.
-
-### Algorithm Experiments
-
-1. **Embedding-based metrics (evaluation):** Actively monitoring word or sentence level embeddings and computing the distances between certain groups.
-2. **Probability based metrics (evaluation):** These metrics include comparing the next-token probabilities or likelihoods between sentences.
-3. **Architecture modification technique (mitigation):** Changing the architecture configuration or including new layers for de-biasing can dynamically guide models to learn fair representations.
-4. **Analysing modular debiasing networks (mitigation):** Modular networks can work as abstract models that can work stand-alone independent of the architecture configurations.
-
+We selected a set of evaluation and mitigation strategies that can inform the design of the tool. Data and algorithm related techniques are selected from Gallegos et al.’s [^1] comprehensive survey.
 
 > **Visit FinBERT Sentiment Analysis Fairness Evaluation repository:** <https://github.com/asabuncuoglu13/faid-test-financial-sentiment-analysis>
 
 
-### Interaction Method Analysis
+## Understanding equitable interaction
 
-1. **ISO 9241 Ergonomics of human-systems interactions to assess interfaces/interactions:** The comprehensive framework aims to assess usability and apply it to interactive system design. Providing insights related to design considerations will support our proactive fairness “by design” approach.
-2. **Microsoft Human-AI Interaction to assess interfaces/interactions:** It is a structured thinking process to design AI-powered applications.
+We utilised ISO 9241 (Ergonomics of human-systems interactions), and Microsoft's Human-AI Interaction Guideline to assess how existing interactions can impact the overall fairness of the system.
 
 > **See an example analysis here:** <https://asabuncuoglu13.github.io/equitable-ai-cookbook/usecases/finance/interaction.html>
 

@@ -23,7 +23,7 @@ The tool, FAID (Fair AI Development), can support developers in documenting fair
 3. **Data Log**: Documents the data sources, preprocessing steps, and any biases identified in the data, ensuring that data integrity is maintained throughout the lifecycle. (See an [example datasheet]()).
 4. **Risk Log**: Records potential risks related to fairness and how they are mitigated, including any ethical concerns, compliance issues, and the steps taken to address them.
 
-## Fairness Evaluation of a Finance Use CAse
+## Fairness Evaluation of a Finance Use Case
 
 We selected a set of evaluation and mitigation strategies that can inform the design of the tool. Data and algorithm related techniques are selected from Gallegos et al.’s [^1] comprehensive survey.
 
